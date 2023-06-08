@@ -65,11 +65,6 @@ const OTPInputs = ({
       return newItems;
     });
   };
-  const inputChangeHandler = (e, id) => {
-    if (items.length <= inputsNumber && !pasteStatus && e.target.value.length < 2) {
-      checkDigits(e.target.value, id);
-    }
-  };
   const checkDigits = (digit, id) => {
     var _items;
     let enteredCharacter = digit;
@@ -81,6 +76,11 @@ const OTPInputs = ({
     digit && setCodeDigit(enteredCharacter, id);
     if (checkDigit && nextSiblingElement) {
       nextSiblingElement.focus();
+    }
+  };
+  const inputChangeHandler = (e, id) => {
+    if (items.length <= inputsNumber && !pasteStatus && e.target.value.length < 2) {
+      checkDigits(e.target.value, id);
     }
   };
   const inputKeyDownHandler = (e, id) => {

@@ -93,11 +93,6 @@ var OTPInputs = function OTPInputs(_ref) {
       return newItems;
     });
   };
-  var inputChangeHandler = function inputChangeHandler(e, id) {
-    if (items.length <= inputsNumber && !pasteStatus && e.target.value.length < 2) {
-      checkDigits(e.target.value, id);
-    }
-  };
   var checkDigits = function checkDigits(digit, id) {
     var _items;
     var enteredCharacter = digit;
@@ -109,6 +104,11 @@ var OTPInputs = function OTPInputs(_ref) {
     digit && setCodeDigit(enteredCharacter, id);
     if (checkDigit && nextSiblingElement) {
       nextSiblingElement.focus();
+    }
+  };
+  var inputChangeHandler = function inputChangeHandler(e, id) {
+    if (items.length <= inputsNumber && !pasteStatus && e.target.value.length < 2) {
+      checkDigits(e.target.value, id);
     }
   };
   var inputKeyDownHandler = function inputKeyDownHandler(e, id) {
