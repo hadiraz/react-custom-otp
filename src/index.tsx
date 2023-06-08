@@ -1,18 +1,18 @@
-import React, { CSSProperties, ReactElement } from 'react'
-import styles from './inputs.module.css'
-import OTPInputs from './OTPInputs'
+import React, { CSSProperties, ReactElement } from 'react';
+import styles from './inputs.module.css';
+import OTPInputs from './OTPInputs';
 
 export type InputsConfig = {
-  inputsNumber: number
-  separator?: ReactElement
-  setStringCode: React.Dispatch<React.SetStateAction<string>>
-  setSubmitStatus?: React.Dispatch<React.SetStateAction<boolean>>
-  regex?: RegExp
-  inputsClasses?: string
-  inputsStyles?: CSSProperties
-  containerClasses?: string
-  containerStyles?: CSSProperties
-}
+  inputsNumber: number;
+  separator?: ReactElement;
+  setStringCode: React.Dispatch<React.SetStateAction<string>>;
+  setSubmitStatus?: React.Dispatch<React.SetStateAction<boolean>>;
+  regex?: RegExp;
+  inputsClasses?: string;
+  inputsStyles?: CSSProperties;
+  containerClasses?: string;
+  containerStyles?: CSSProperties;
+};
 export const OTP = ({
   inputsClasses = '',
   inputsStyles,
@@ -41,5 +41,5 @@ export const OTP = ({
         regex={regex}
       />
     </div>
-  )
-}
+  );
+};
