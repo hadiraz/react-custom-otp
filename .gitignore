@@ -1,24 +1,52 @@
-# Logs
-logs
-*.log
+# Dependency directories
+node_modules/
+.pnp/
+.pnp.js
+
+# Production build directory
+/build/
+
+# Coverage directory
+/coverage/
+
+# Cache directories
+/.cache/
+/.eslintcache/
+/.yarn/
+
+# Log files
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Environment files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build artifacts
+/*.js
+/*.js.map
+/*.d.ts
 
 # Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
+.idea/
+.vscode/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# Jest coverage
+/coverage/
+
+# TypeScript build output
+/out/
+
+# Package lock
+package-lock.json
+
+# Yarn lock
+yarn.lock
