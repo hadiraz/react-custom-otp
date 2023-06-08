@@ -1,13 +1,11 @@
-._inputs-module__inputs__wU6F4{
+.inputs{
     border : none;
     border-bottom: 1px solid #121212;
     color:#121212 ;
     background: transparent;
     width: 25px;
     text-align: center;
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
+    appearance: none;
     margin-left: 5px;
     margin-right: 5px;
     display: flex;
@@ -16,10 +14,10 @@
     outline: none;
     font-size: 1.2rem;
 }
-._inputs-module__inputs__wU6F4:focus{
+.inputs:focus{
     border-bottom: 2px solid blue;
 }
-._inputs-module__container__3ldeg{
+.container{
     display: flex;
     align-items: center;
     flex-wrap: wrap;

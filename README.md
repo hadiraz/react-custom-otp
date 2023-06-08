@@ -6,25 +6,29 @@
 
 ## Install
 
-```bash
+```
 npm install --save react-custom-otp
 ```
 
 ## Usage
 
 ```tsx
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 
-import MyComponent from 'react-custom-otp'
+import { OTP } from 'react-custom-otp'
 import 'react-custom-otp/dist/index.css'
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+const Example = () => {
+  const [stringCode , setStringCode] = useState("")
+    return (
+      <OTP
+        setStringCode={setStringCode}
+        inputsNumber={5}
+      />
+    )
 }
 ```
 
 ## License
 
-MIT © [Hadi Raziei](https://github.com/Hadi Raziei)
+MIT © [Hadi Raziei](https://github.com/hadiraz)

@@ -1,5 +1,5 @@
 import React, { CSSProperties, ReactElement } from 'react';
-export declare type InputsConfig = {
+declare type InputsConfig = {
     inputsNumber: number;
     separator?: ReactElement;
     setStringCode: React.Dispatch<React.SetStateAction<string>>;
@@ -10,4 +10,5 @@ export declare type InputsConfig = {
     containerClasses?: string;
     containerStyles?: CSSProperties;
 };
-export declare const OTP: ({ inputsClasses, inputsStyles, containerClasses, containerStyles, inputsNumber, setStringCode, setSubmitStatus, separator, regex, }: InputsConfig) => ReactElement;
+declare const OTPInputs: ({ inputsClasses, inputsStyles, inputsNumber, setStringCode, setSubmitStatus, separator, regex, }: InputsConfig) => ReactElement;
+export default OTPInputs;

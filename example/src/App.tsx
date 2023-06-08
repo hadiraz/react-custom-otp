@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-import { ExampleComponent } from 'react-custom-otp'
-import 'react-custom-otp/dist/index.css'
-
+import {OTP} from ""
+// import 'react-custom-otp/dist/index.css'
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  const [stringC , setStringC] = useState("")
+  return (<OTP inputsNumber={3} setStringCode={setStringC} />)
 }
 
 export default App
