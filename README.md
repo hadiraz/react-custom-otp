@@ -1,7 +1,6 @@
 # react-custom-otp
 
 [![NPM](https://img.shields.io/npm/v/react-custom-otp.svg)](https://www.npmjs.com/package/react-custom-otp)
-[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 > A React component library for adding OTP (One-Time Password) functionality to your project.
 
