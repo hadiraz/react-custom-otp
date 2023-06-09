@@ -18,7 +18,7 @@ function _extends() {
   return _extends.apply(this, arguments);
 }
 
-var styles = {"inputs":"_inputs-module__inputs__wU6F4","container":"_inputs-module__container__3ldeg"};
+var styles = {"inputs":"_wU6F4","container":"_3ldeg"};
 
 var OTPInputs = function OTPInputs(_ref) {
   var _ref$inputsClasses = _ref.inputsClasses,
