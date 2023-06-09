@@ -38,7 +38,7 @@ jobs:
       - name: Bump release version
         if: startsWith(github.event.inputs.release-type, 'pre') != true
         run: |
-          npm version ${{ github.event.inputs.version }}
+          npm --no-git-tag-version version ${{ github.event.inputs.version }}
           echo "RELEASE_TAG=latest" >> $GITHUB_ENV
         env:
           RELEASE_TAG: ${{ env.RELEASE_TAG }}
