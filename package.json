@@ -1,9 +1,14 @@
 {
   "name": "react-custom-otp",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A react component library for adding OTP(one time password) to your project.",
   "author": "Hadi Raziei",
-  "keywords": ["react" , "otp" , "custom" , "customizable"],
+  "keywords": [
+    "react",
+    "otp",
+    "custom",
+    "customizable"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/hadiraz/react-custom-otp/issues"
