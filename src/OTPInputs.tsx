@@ -74,18 +74,6 @@ const OTPInputs = ({
     }
   }, [filledInputs]);
 
-  // useEffect(() => {
-  //   if (items.length > 0) {
-  //     items[0].reference.current?.focus()
-  //   }
-  // }, [items.length])
-
-  // useEffect(()=>{
-  //   if(items.length === inputsNumber){
-  //     items[0].reference.current?.focus()
-  //   }
-  // },[items[0]?.reference])
-
   const setCodeDigit = (inputValue: string, inputId: number): void => {
     setItems((prev) => {
       const newItems = prev.map(({ value, id, reference }) => {
