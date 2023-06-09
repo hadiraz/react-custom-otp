@@ -1,0 +1,38 @@
+name: Generate tag version
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: New version
+        required: true
+        default: 'patch'
+        type: choice
+        options:
+          - patch
+          - minor
+          - major
+
+jobs:
+  version:
+    name: Create new version ${{ github.event.inputs.version }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Git
+        run: |
+          git config user.email "hadiraziei1@gamil.com"
+          git config user.name "GitHub Actions HadiR"
+
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v2.5.0
+        with:
+          node-version: 16.x
+
+      - name: Generate new version
+        run: npm version ${{ github.event.inputs.version }}
+
+      - name: Push new version tag to repository
+        run: git push main main --tags
