@@ -35,4 +35,4 @@ jobs:
         run: npm version ${{ github.event.inputs.version }}
 
       - name: Push new version tag to repository
-        run: git push main main --tags
+        run: git push origin main --tags
