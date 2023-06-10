@@ -27,19 +27,20 @@ const Example = () => {
     )
 }
 ```
-
-
 ## Props/Options
 
-| Prop              | Type     | Description                                                    | Required |
-|-------------------|----------|----------------------------------------------------------------|----------|
-| inputsClasses     | string   | CSS classes to apply to the input fields.                       | Optional |
-| inputsStyles      | object   | Inline styles to apply to the input fields.                     | Optional |
-| containerClasses  | string   | CSS classes to apply to the container element.                  | Optional |
-| inputsNumber      | number   | The number of OTP input fields to render.                       | Required |
-| setStringCode     | func     | A callback function to handle the entered OTP as a string.      | Required |
-| setSubmitStatus   | func     | A callback function to handle the submit status of the OTP component, if return true it means that all the inputs have been filled. | Optional |
-| separator         | string   | The separator character to use between each OTP digit.          | Optional |
+
+
+| Prop            | Type                                           | Description                                                             | Required |
+|-----------------|------------------------------------------------|-------------------------------------------------------------------------|----------|
+| inputsNumber    | number                                         | The number of OTP input fields to render.                               | Required |
+| separator       | ReactElement                                   | The separator element to use between each OTP digit.                     | Optional |
+| setStringCode   | React.Dispatch<React.SetStateAction<string>>    | A callback function to handle the entered OTP as a string.               | Required |
+| setSubmitStatus | React.Dispatch<React.SetStateAction<boolean>>   | A callback function to handle the submit status of the OTP component.    | Optional |
+| inputsClasses   | string                                         | CSS classes to apply to the input fields.                               | Optional |
+| inputsStyles    | CSSProperties                                  | Inline styles to apply to the input fields.                             | Optional |
+| containerClasses| string                                         | CSS classes to apply to the container element.                          | Optional |
+| containerStyles | CSSProperties                                  | Inline styles to apply to the container element.                        | Optional |
 
 
 ## Full example
@@ -57,6 +58,7 @@ const Example = () => {
       inputsClasses="custom-inputs"
       inputsStyles={{ background: '#f1f1f1', color: '#333' }}
       containerClasses="otp-container"
+      containerStyles={{ background: '#ccc' }}
       inputsNumber={6}
       setStringCode={setStringCode}
       setSubmitStatus={setSubmitStatus}
@@ -66,7 +68,7 @@ const Example = () => {
 };
 ```
 \
-The react-custom-otp library is designed to simplify the process of adding OTP functionality to your React projects. It provides an OTP component that can be easily integrated into your codebase. The example above demonstrates how to use the component and sets up a simple OTP input with 5 digits.
+The react-custom-otp library is designed to simplify the process of adding OTP functionality to your React projects. It provides an OTP component that can be easily integrated into your codebase.
 
 To install the library, use the provided npm command, as shown in the "Install" section. Make sure to import the necessary components and the CSS file to enable the styling.
 
