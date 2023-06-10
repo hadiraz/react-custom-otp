@@ -36,7 +36,7 @@ const Example = () => {
 | inputsNumber    | number                                         | The number of OTP input fields to render.                               | Required |
 | separator       | ReactElement                                   | The separator element to use between each OTP digit.                     | Optional |
 | setStringCode   | React.Dispatch<React.SetStateAction<string>>    | A callback function to handle the entered OTP as a string.               | Required |
-| setSubmitStatus | React.Dispatch<React.SetStateAction<boolean>>   | A callback function to handle the submit status of the OTP component.    | Optional |
+| setSubmitStatus | React.Dispatch<React.SetStateAction<boolean>>   | A callback function to handle the submit status of the OTP component if True it means all the input fields have been filled.    | Optional |
 | inputsClasses   | string                                         | CSS classes to apply to the input fields.                               | Optional |
 | inputsStyles    | CSSProperties                                  | Inline styles to apply to the input fields.                             | Optional |
 | containerClasses| string                                         | CSS classes to apply to the container element.                          | Optional |
